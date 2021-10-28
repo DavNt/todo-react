@@ -3,27 +3,28 @@ import React from "react";
 export default function AddTodo(props){
   return(
     <>
-    <form onSubmit={props.submit}>
-      <div className="row m-3 justify-content-center">
-        <div className="col-6">
+    <form onSubmit={props.submit} className="">
+      <div className="row justify-content-center m-3">
+        <div className="col-7">
           <input
             type="text"
-            className="form-control"
+            className="form-control height put-center"
             placeholder="add data"
             onChange={(e)=>{
-              e.preventDefault();
+              // e.preventDefault();
               props.todochange(e.target.value);
             }}
           />
         </div>
-        <div className="col-3">
-          <button 
+        <div className="col-5">
+          <input 
             type="submit"
-            className="btn btn-primary"
-            // onClick={props.submit()}
-          >
-            Add
-          </button>
+            className="btn btn-primary height width"
+            value="Add"
+            // onClick={props.submit}
+          />
+            {/* Add
+          </input> */}
         </div>
       </div>
     </form>

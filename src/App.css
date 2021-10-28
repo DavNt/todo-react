@@ -1,9 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo|Montserrat|Poppins&display=swap');
+
+*{
+  font-family: 'Monserrat', sans-serif;
+}
+
 .head-btn{
   text-decoration: none;
   color: #000;
   text-align: center;
   padding: 10px;
+  width: 100px;
 }
 .head-btn-active{
-  border-bottom: 6px solid #1d05f7;
+  border-bottom: 4px solid #1d05f7;
 }
+.hr-mt{
+  margin-top: 12px;
+  /* position: absolute; */
+}
+.height{
+  height: 50px;
+}
+.item-chck-nam{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sp-btwn{
+  justify-content: space-between;
+}
+.item-checkbx{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.delbtn{
+  align-self: flex-start;
+}
+.width{
+  margin-left: 100px;
+  width: 70px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .put-center{
+    margin-left: 0px;
+  }
+  .width{
+    margin-left: 0px;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+  .put-center{
+    margin-left: 30px;
+  }
+  .width{
+    margin-left: 30px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .put-center{
+    margin-left: 50px;
+  }
+  .width{
+    margin-left: 40px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up)  */
+@media only screen and (min-width: 992px) {
+  .put-center{
+    margin-left: 80px;
+  }
+  .width{
+    margin-left: 70px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .put-center{
+    margin-left: 100px;
+  }
+  .width{
+    margin-left: 100px;
+  }
+}  

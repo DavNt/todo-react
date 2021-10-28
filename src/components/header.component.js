@@ -30,11 +30,11 @@ export default function Header(){
     <>
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-9">
+        <div className="col-9 m-5">
           <h1 className="text-center">#todo</h1>
         </div>
       </div>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mb-0 pb-0">
         <div className="col-3 text-center">
           <Link
             className={`head-btn ${isAllActive?"head-btn-active":""}`}
@@ -68,11 +68,13 @@ export default function Header(){
             Completed
           </Link>
         </div>
-      </div>
-      <div className="row justify-content-center">
-        <div className="col-10 hr-mt">
-          <hr/>
+        <div class="w-100"></div>
+        <div className="col-10">
+          <hr className=" hr-mt"/>
         </div>
+
+      </div>
+      <div className="row m-0 p-0">
       </div>
     </div>
     </>

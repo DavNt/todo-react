@@ -76,12 +76,9 @@ function App() {
     setTodos(updatedItem);
   }
 
-  // function completingTodo(){
-    
-
-  //   setCurrentTodo({...currentTodo, progress: progress});
-  //   handleUpdateTodo(currentTodo.id, currentTodo);
-  // }
+  function deleteAll(){
+    setTodos(todos.filter(({progress}) => progress === false));
+  }
 
   return (
     <>
@@ -116,7 +113,7 @@ function App() {
             progresschange={handleProgressChange}
             submit={handleSubmit}
             delete={handleDelete}
-            // progress={progress}
+            deleteall={deleteAll}
             todos={todos}
             updateTodo={handleUpdateTodo}
           />
