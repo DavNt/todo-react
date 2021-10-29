@@ -21,25 +21,15 @@ function App() {
 
   const [todo, setTodo] = useState("");
   // const [progress, setProgress] = useState(false);
-  // const [currentTodo, setCurrentTodo] = useState({});
 
   useEffect(() =>{
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
-  // function handleTodoChange(value){
-  //   setTodo(value);
-  // }
-
   function handleProgressChange(todo){
     // setProgress(!progress);
-    // gettingTodo(todo);
   }
-  // function gettingTodo(todo){
-  //   setCurrentTodo({...todo});
-  //   completingTodo();
 
-  // }
   function handleSubmit(){
     // e.preventDefault();
     if(todo !== ""){
@@ -70,8 +60,6 @@ function App() {
     const updatedItem = todos.map((todo) => {
       return todo.id === id ? {...todo, progress: !todo.progress} : todo;
     });
-    // set editing to false because this function will be used inside a onSubmit function - which means the data was submited and we are no longer editing
-    // setIsEditing(false);
     // update the todos state with the updated todo
     setTodos(updatedItem);
   }
